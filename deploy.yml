@@ -1,0 +1,19 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: my-deployment
+spec:
+  replicas: 3
+  selector:
+    matchLabels:
+      app: yelp-camp
+  template:
+    metadata:
+      labels:
+        app: yelp-camp
+    spec:
+      containers:
+        - name: yelp-camp-container
+          image: jagadishkumpati/git:v1
+          ports:
+            - containerPort: 80
