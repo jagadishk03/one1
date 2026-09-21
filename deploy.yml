@@ -14,6 +14,6 @@ spec:
     spec:
       containers:
         - name: yelp-camp-container
-          image: jagadishkumpati/git:5
+          image: jagadishkumpati/git:6
           ports:
             - containerPort: 80
