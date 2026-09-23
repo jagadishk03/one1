@@ -13,7 +13,7 @@ spec:
         app: yelp-camp
     spec:
       containers:
-        - name: yelp-camp-container
+        - name: yelp-camp-containers
           image: jagadishkumpati/git:6
           ports:
             - containerPort: 80
